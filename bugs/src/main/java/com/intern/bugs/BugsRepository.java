@@ -7,11 +7,11 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 interface BugsRepository extends MongoRepository<BugsEntity, String> {
 
-    void delete (BugsEntity deleted);
+    /*void delete (BugsEntity deleted);
 
     List<BugsEntity> findAll();
 
     Optional<BugsEntity> findOne(String id);
 
-    BugsEntity save(BugsEntity saved);
+    BugsEntity save(BugsEntity saved);*/
 }

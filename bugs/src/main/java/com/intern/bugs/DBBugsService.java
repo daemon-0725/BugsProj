@@ -65,7 +65,7 @@ final class DBBugsService implements BugsService {
     }
 
     private BugsEntity findBugById(String id) {
-        Optional<BugsEntity> bug = repository.findOne(id);
+        Optional<BugsEntity> bug = repository.findById(id);
         return bug.orElseThrow(() -> new BugNotFoundException(id));
     }
 
